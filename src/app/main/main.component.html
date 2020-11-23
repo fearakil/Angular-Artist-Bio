@@ -1,0 +1,20 @@
+<div class="top-bar">
+    <h1>Artists Bio</h1>
+</div>
+
+<div class="artist-display-section">
+    <h2>{{artist}}</h2>
+</div>
+
+<section class="add-artist-section">
+    <div class="add-artist-container">
+        WIP ARTIST ENTRY
+        <app-add-artist-form style="padding: 20px;" (formSubmit) = 'addArtist($event)'></app-add-artist-form>   
+    <div>
+<!-- </section> -->
+
+<hr style="margin-top: 0px;">
+<!-- <app-artist-list {{artistName}} = "artistName" (delete) ="deleteArtist($event)" (update) = "updateArtist($event)"></app-artist-list> -->
+<app-artist-list [artist] = "artist" (delete) ="deleteArtist($event)" (update) = "updateArtist($event)">
+
+</app-artist-list>
